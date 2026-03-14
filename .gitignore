@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+*.log
+.opencode/bun.lock
+.opencode/package.json
+.opencode/node_modules/

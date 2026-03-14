@@ -1,0 +1,81 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "orchestrator": {
+      "description": "Workflow orchestration - manages complete development flow, decides when to invoke which Agent",
+      "mode": "primary",
+      "tools": {
+        "read": true,
+        "task": true,
+        "grep": true,
+        "glob": true,
+        "skill": true
+      },
+      "permission": {
+        "edit": "deny",
+        "write": "deny",
+        "bash": "deny"
+      }
+    },
+    "product-manager": {
+      "description": "Requirements analysis - questioning, analysis, PRD + CHANGELOG output",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "ui-designer": {
+      "description": "UI Design - generates Figma / Imagen 4 / AI Studio prompts",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "grep": true,
+        "glob": true
+      }
+    },
+    "fullstack-dev": {
+      "description": "Full-stack development - any code development task, auto-loads Skills by keywords",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": true,
+        "skill": true
+      },
+      "permission": {
+        "bash": {
+          "*": "ask",
+          "npm run*": "allow",
+          "npm install*": "allow",
+          "npx*": "allow",
+          "git status*": "allow",
+          "git diff*": "allow"
+        }
+      }
+    },
+    "qa-tester": {
+      "description": "Testing & Validation - full-stage challenge + functional testing + iteration",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "grep": true,
+        "glob": true,
+        "bash": true
+      }
+    }
+  },
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  }
+}
