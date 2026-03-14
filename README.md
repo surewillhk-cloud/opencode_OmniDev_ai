@@ -39,7 +39,7 @@ project-root/
       vercel-deploy/       ← Vercel deployment
       token-economics/     ← Token economics
       protocol-design/     ← Protocol design
-      mvp-sequencing/     ← MVP development sequence (keyword-triggered)
+      mvp-sequencing/   ← MVP development sequence (keyword-triggered)
       blockchain-standards/← Blockchain development (keyword-triggered)
       x-content-strategy/ ← X (Twitter) content strategy
       agent-creator/      ← Agent creation guide
