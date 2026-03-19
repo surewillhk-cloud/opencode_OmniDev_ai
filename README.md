@@ -1,4 +1,4 @@
-# CodeNexus v5.2 - AI-Driven Development Team
+# CodeNexus v5.2.2 - AI-Driven Development Team
 
 > ⚠️ **重要说明** ⚠️
 > 
@@ -206,6 +206,8 @@ Agent 执行任务（自动注入相关 Skill 上下文）
 
 | 版本 | 变更 |
 |------|------|
+| **v5.2.2** | 🛡️ 框架保护机制、.env口令验证、Skills keywords修复、QUICKSTART.md |
+| **v5.2.1** | api-design skill、冒烟测试脚本、评审机制增强 |
 | **v5.2** | 🛡️ 角色强化机制、🔥 API 冒烟测试、📊 5-Why 根因分析、⚡ 主动测试、新增 security-project skill |
 | v5.1 | 简化为 5 核心 Agents，Skills 添加关键词触发解耦加载 |
 | v5 | 添加 5 个 LLM 代码生成 Agents + 5 个 Skills |
@@ -221,7 +223,17 @@ Agent 执行任务（自动注入相关 Skill 上下文）
 cp -r .opencode /your/project/path/
 cp AGENTS.md /your/project/path/
 cp opencode.json /your/project/path/
+
+# 配置框架保护口令（强烈建议）
+cp .env.example /your/project/path/.env
+# 编辑 .env，设置 CODENEXUS_FRAMEWORK_PASSWORD
 ```
+
+### 框架保护机制
+
+opencode.json 中已配置框架文件的写保护：
+- `AGENTS.md`、`opencode.json`、`.opencode/`、`scripts/` 等文件**禁止 AI 直接修改**
+- 如需修改，需要手动编辑 opencode.json 移除限制
 
 ---
 
@@ -240,4 +252,4 @@ opencode --agent orchestrator
 
 ---
 
-*Built on OpenCode Agent + Skill architecture | v5.2*
+*Built on OpenCode Agent + Skill architecture | v5.2.2*

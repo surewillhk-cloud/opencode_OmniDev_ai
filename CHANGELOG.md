@@ -4,6 +4,47 @@
 
 ---
 
+## [5.2.2] - 2026-03-20
+
+### 新增
+
+- **.env.example**: 框架保护口令配置示例
+- **scripts/smoke-test.sh**: API 冒烟测试自动化脚本
+- **QUICKSTART.md**: 快速入门指南
+
+### 优化
+
+- **opencode.json**: 添加框架文件保护规则
+  - AGENTS.md, opencode.json, .opencode/**, scripts/**, .env 设置为 edit/write deny
+  - 口令验证保护机制
+
+### 修复
+
+- **Skills keywords**: 为 6个缺少 metadata.keywords 的 Skill 补充
+  - vercel-deploy, web-design-guidelines, composition-patterns
+  - token-economics, protocol-design, x-content-strategy
+- **opencode.json**: product-manager 和 ui-designer 添加 skill 工具
+
+---
+
+## [5.2.1] - 2026-03-20
+
+### 新增
+
+- **api-design skill**: REST API 设计规范
+- **scripts/smoke-test.sh**: API 冒烟测试脚本
+
+### 优化
+
+- **Stage 评审机制**: 添加通过标准和最大 3 轮限制
+- **README.md**: Skill 映射表更新到 23个 Skills
+
+### 修复
+
+- Skills keywords 缺失问题
+
+---
+
 ## [5.2.0] - 2026-03-20
 
 ### 新增
