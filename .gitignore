@@ -4,3 +4,8 @@ node_modules/
 .opencode/bun.lock
 .opencode/package.json
 .opencode/node_modules/
+
+# Environment (contains framework password)
+.env
+.env.local
+.env.*.local

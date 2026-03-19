@@ -93,6 +93,62 @@
   "permission": {
     "skill": {
       "*": "allow"
+    },
+    "edit": {
+      "pattern": "AGENTS.md",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": "opencode.json",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": "QUICKSTART.md",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": "CHANGELOG.md",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": ".opencode/**",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": "scripts/**",
+      "action": "deny"
+    },
+    "edit": {
+      "pattern": ".env",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": "AGENTS.md",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": "opencode.json",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": "QUICKSTART.md",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": "CHANGELOG.md",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": ".opencode/**",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": "scripts/**",
+      "action": "deny"
+    },
+    "write": {
+      "pattern": ".env",
+      "action": "deny"
     }
   }
 }

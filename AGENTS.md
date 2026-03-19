@@ -244,20 +244,46 @@ Bug：[表面现象]
 
 ## 7. 受保护文件（未经授权禁止修改）
 
+### 框架文件保护机制
+
+**配置锁定**：opencode.json 中已配置框架文件的 edit/write 权限为 deny，AI 无法直接修改以下文件。
+
+如需修改，必须：
+
+1. **手动修改** - 在 opencode.json 中临时移除限制
+2. **口令验证** - 修改时需要从 `.env` 文件读取 `CODENEXUS_FRAMEWORK_PASSWORD` 并验证
+
+### 受保护文件清单
+
 | 文件 / 目录 | 原因 |
 |------------|------|
-| `.env` / `.env.*` | 环境变量，错误会破坏运行时 |
+| `.env` | **框架口令文件，禁止修改** |
 | `**/migrations/**` | DB 迁移，不可逆 |
 | `**/generated/**` | 自动生成，会被覆盖 |
 | `package-lock.json` / `yarn.lock` | 依赖锁，破坏环境 |
 | `.github/`、`Dockerfile`、`docker-compose.yml` | CI/CD 配置 |
-| **CodeNexus 框架文件** | **禁止修改** |
+
+### CodeNexus 框架文件（配置级禁止修改）
+
+| 文件 / 目录 | 原因 |
+|------------|------|
 | `AGENTS.md` | 全局工程标准，框架定义 |
 | `opencode.json` | OpenCode 配置 |
 | `.opencode/` 目录 | Agent 和 Skill 定义 |
 | `QUICKSTART.md` | 使用指南 |
 | `CHANGELOG.md` | 版本记录 |
-| `scripts/smoke-test.sh` | 测试脚本 |
+| `scripts/` | 测试脚本目录 |
+
+### 口令配置
+
+```bash
+# 复制示例配置
+cp .env.example .env
+
+# 编辑口令（必须修改默认值）
+nano .env
+# CODENEXUS_FRAMEWORK_PASSWORD=your_secure_password_here
+```
 
 ---
 
