@@ -251,6 +251,13 @@ Bug：[表面现象]
 | `**/generated/**` | 自动生成，会被覆盖 |
 | `package-lock.json` / `yarn.lock` | 依赖锁，破坏环境 |
 | `.github/`、`Dockerfile`、`docker-compose.yml` | CI/CD 配置 |
+| **CodeNexus 框架文件** | **禁止修改** |
+| `AGENTS.md` | 全局工程标准，框架定义 |
+| `opencode.json` | OpenCode 配置 |
+| `.opencode/` 目录 | Agent 和 Skill 定义 |
+| `QUICKSTART.md` | 使用指南 |
+| `CHANGELOG.md` | 版本记录 |
+| `scripts/smoke-test.sh` | 测试脚本 |
 
 ---
 
