@@ -1,7 +1,13 @@
 # CodeNexus v5.2 - AI-Driven Development Team
 
-> LLM-powered code generation team built on OpenCode architecture
+> ⚠️ **重要说明** ⚠️
 > 
+> **本项目不是 LLM 调用框架**，不涉及大模型 API 调用或 AI Agent 编排。
+> 
+> **现阶段使用方式**：在 OpenCode 中呼出指挥官（Orchestrator），通过调用**本地模型**（如 MiniMax、Ollama、LM Studio 等）代入角色进行开发。所有 Agent 的行为定义是预设的 prompt 模板，LLM 只负责理解和执行这些角色。
+
+---
+
 > Architecture: Agent handles orchestration, Skill provides expertise - fully decoupled and independently replaceable.
 
 ---
