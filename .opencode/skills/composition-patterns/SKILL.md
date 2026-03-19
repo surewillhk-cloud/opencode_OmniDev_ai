@@ -6,6 +6,8 @@ description: |
   Use when: refactoring components, building reusable libraries, or designing flexible APIs.
 license: MIT
 compatibility: opencode
+metadata:
+  keywords: "React,组合模式,组件,compound components,state lifting,prop drilling"
 ---
 
 # React Composition Patterns

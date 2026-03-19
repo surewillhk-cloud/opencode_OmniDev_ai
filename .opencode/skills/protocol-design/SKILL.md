@@ -1,6 +1,10 @@
 ---
 name: protocol-design
 description: Electronic Invitation Protocol design standards - defines AI to AI compute trading data structures, broadcasting mechanisms, and daemon specifications. Loaded by fullstack-dev when developing protocol layer.
+license: MIT
+compatibility: opencode
+metadata:
+  keywords: "协议,Protocol,API,接口设计,数据结构,通信协议"
 ---
 
 # Electronic Invitation Protocol Standards

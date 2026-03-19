@@ -25,7 +25,8 @@
         "write": true,
         "edit": true,
         "grep": true,
-        "glob": true
+        "glob": true,
+        "skill": true
       }
     },
     "ui-designer": {
@@ -35,7 +36,8 @@
         "read": true,
         "write": true,
         "grep": true,
-        "glob": true
+        "glob": true,
+        "skill": true
       }
     },
     "fullstack-dev": {

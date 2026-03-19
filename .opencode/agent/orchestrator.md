@@ -109,9 +109,15 @@ temperature: 0.3
   → qa-tester 输出挑战报告
   → 暂停，等待用户决策 ⚠️
 
+评审通过标准：
+  - 所有 🟢 挑战已响应（接受/拒绝/延期）
+  - 关键功能有明确验收标准
+  - 边界情况已识别
+  - 最大评审轮次：3 轮（超时自动进入下一阶段）
+
 用户决策：
-  A) 全部接受 → product-manager 递增版本
-  B) 部分接受 → product-manager 更新
+  A) 全部接受 → product-manager 递增版本，进入 Stage 3
+  B) 部分接受 → product-manager 更新，重新评审（计1轮）
   C) 忽略 → 进入 Stage 3
 ```
 
@@ -135,9 +141,15 @@ temperature: 0.3
   → qa-tester 输出 UI 挑战报告
   → 暂停，等待用户决策 ⚠️
 
+评审通过标准：
+  - 所有状态已覆盖（Loading/Empty/Error）
+  - 响应式设计符合要求
+  - 交互逻辑清晰
+  - 最大评审轮次：3 轮（超时自动进入下一阶段）
+
 用户决策：
-  A) 全部修复 → ui-designer 递增版本
-  B) 部分修复 → ui-designer 更新
+  A) 全部修复 → ui-designer 递增版本，重新评审（计1轮）
+  B) 部分修复 → ui-designer 更新，重新评审（计1轮）
   C) 忽略 → 进入 Stage 5
 ```
 

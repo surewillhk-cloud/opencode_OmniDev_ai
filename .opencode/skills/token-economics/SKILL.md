@@ -1,6 +1,10 @@
 ---
 name: token-economics
 description: AiProtoMesh TOKEN economics design standards - includes anchoring mechanism, issuance strategy, anti-shorting mechanism, and three-phase issuance roadmap. Loaded by product managers and engineers when developing TOKEN-related features.
+license: MIT
+compatibility: opencode
+metadata:
+  keywords: "Token,代币,经济模型,发行,tokenomics,加密货币"
 ---
 
 # TOKEN Economics Standards

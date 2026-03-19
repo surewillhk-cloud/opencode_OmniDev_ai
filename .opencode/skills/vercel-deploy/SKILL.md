@@ -5,6 +5,8 @@ description: |
   Use when: user asks to "deploy", "push live", "publish", or "go to production".
 license: MIT
 compatibility: opencode
+metadata:
+  keywords: "部署,上线,Vercel,发布,生产环境,CI/CD,devops"
 ---
 
 # Vercel Deployment Skill

@@ -1,6 +1,10 @@
 ---
 name: x-content-strategy
 description: AiProtoMesh X (Twitter) content strategy - includes three-phase posting strategy, viewpoint matrix, and semi-automated posting AI assistant build standards. Used by product managers.
+license: MIT
+compatibility: opencode
+metadata:
+  keywords: "X,Twitter,内容,发帖,社交媒体,营销,增长"
 ---
 
 # X Content Strategy Standards

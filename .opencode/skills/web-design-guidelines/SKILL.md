@@ -6,6 +6,8 @@ description: |
   or implementing user interfaces.
 license: MIT
 compatibility: opencode
+metadata:
+  keywords: "Web设计,UI,界面,无障碍,Accessibility,UX,用户体验,响应式"
 ---
 
 # Web Design Guidelines

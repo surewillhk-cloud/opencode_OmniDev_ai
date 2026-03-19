@@ -125,25 +125,33 @@ fullstack-dev 会自动加载 `devops-automation` + `security-audit` Skills
 
 ---
 
-## Skill 映射
+## Skill 映射（23个）
 
 | Skill | 关键词 | 用途 |
 |-------|--------|------|
-| `prd-methodology` | PRD 相关 | PRD 写作 |
+| `prd-methodology` | PRD、需求 | PRD 写作 |
 | `changelog-format` | CHANGELOG | Changelog 维护 |
 | `ui-figma-playbook` | Figma | Figma 提示 |
-| `ui-imagen-guide` | 图像生成 | Imagen 提示 |
-| `ui-aistudio-guide` | 原型 | AI Studio 提示 |
-| `dev-standards` | 代码开发 | 代码标准 |
-| `test-checklist` | 测试 | 测试清单 |
-| `security-project` | 安全项目 | 安全项目规范（新增）|
+| `ui-imagen-guide` | 图像、Imagen | Imagen 提示 |
+| `ui-aistudio-guide` | 原型、AI Studio | AI Studio 提示 |
+| `dev-standards` | 代码、开发 | 代码标准 |
+| `test-checklist` | 测试、验证 | 测试清单 |
+| `security-project` | 安全项目、渗透 | 安全项目规范 |
+| `security-audit` | 安全、漏洞、审计 | 安全审计 |
 | `architecture-design` | 架构、技术选型 | 架构设计 |
 | `code-generation` | 生成、创建、实现 | 代码生成 |
-| `security-audit` | 安全、漏洞、审计 | 安全审计 |
-| `devops-automation` | 部署、CI/CD、Docker | DevOps |
 | `code-refactoring` | 重构、优化 | 重构 |
+| `devops-automation` | DevOps、CI/CD、Docker | DevOps 自动化 |
+| `vercel-deploy` | 部署、Vercel、上线 | Vercel 部署 |
+| `composition-patterns` | React、组合、组件 | React 组合模式 |
+| `web-design-guidelines` | Web、UI、UX、无障碍 | Web 设计规范 |
 | `blockchain-standards` | 区块链、智能合约 | 区块链开发 |
+| `token-economics` | Token、代币、经济模型 | Token 经济 |
+| `protocol-design` | 协议、API、接口 | 协议设计 |
+| `x-content-strategy` | X、Twitter、内容 | 社交内容策略 |
 | `mvp-sequencing` | MVP、路线图 | MVP 规划 |
+| `agent-creator` | Agent、创建、配置 | Agent 创建 |
+| `api-design` | API、REST、接口设计 | API 设计规范 |
 
 ---
 
